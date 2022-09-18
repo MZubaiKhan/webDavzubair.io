@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("images/pexels-aleksandar-pasaric-2341830.jpg") ;
+
+background-position: center;
+background-size: cover;
+position: relative;
+
+}
+.nav-links{
+flex: 1;
+text-align: right;
+    
+}
+.nav-links ul li{
+list-style: none;
+display: inline-block;
+padding: 8px 15px;
+position: relative;
+
+}
+.nav-links ul li a{
+
+color: #fff;
+text-decoration: none;
+font-size: 13px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.nav-links ul li::after{
+
+    content: '';
+    width: 0;
+    height: 2px;
+    background:#f44336;
+    display: block;
+    margin:auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+
+
+
+
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+   
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+.cross{
+    width: 30px;
+    display: none;
+}
+.edits{
+    width: 30px;
+  right: 2%;
+    position: absolute;
+    top: 2%;
+    display: none;
+}
+.creations{
+position: absolute;
+top: 30%;
+text-align: center;
+
+
+
+
+
+
+}
+
+
+
+
+@media(max-width:700px){
+
+    .text-box h1{
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+.nav-links ul li{
+    display: block;
+}
+.nav-links{
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top:0;
+    right:-200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+}
+.cross{
+    display: block;
+    margin: 10px;
+    color: #fff;
+    cursor: pointer; 
+    
+}
+.edits{
+    display: block;
+    width: 40px;
+    
+}
+.nav-links ul{
+padding: 30px;
+
+}
+
+}
+
+
+
+
+/*-----our Service--- */
+.Our_Services{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    }
+    h1{
+        font-size: 36px;
+        font-weight: 600;
+    }
+    p{
+        color:#777;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;
+    }
+    .row{
+
+margin-top: 5%;
+display: flex;
+justify-content: space-between;
+
+
+
+    }
+    .ServiseColumn{
+        flex-basis: 31%;
+        background: rgb(224, 224, 203);
+        border-radius: 10px;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        transition: 0.5s;
+    }
+    h3{
+
+        text-align: center;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+    .ServiseColumn:hover{
+
+box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+
+
+    }
+    @media (max-width:700px){
+
+.row{
+    flex-direction: column;
+}
+
+
+
+    }
+
+
+    .social{
+
+background-color: rgb(218, 216, 216);
+width: 100%;
+height: 40px;
+
+
+    }
+
+    .social img{
+width: 30px;
+
+
+position: absolute;
+left: 45%;
+top: 175%;
+
+
+    }
+
+    @media(max-width:700px){
+
+        .social img{
+            width: 20px;
+            
+            
+            position: absolute;
+            left: 45%;
+            top: 262%;
+            
+
+
+
+
+
+
+        
+    }
